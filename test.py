@@ -1,11 +1,12 @@
 import unittest
-class simpleTest (unittest.TestCase):
+
+class Simple(unittest.TestCase):
 	def setUp(self):
-		print 'hehe'
-		self.assertEqual(1,1)
-	def tearDown(self):
-		print 'pasado con exito'
-	def test_extra(self):
-		print 'placeholder'
-	if __name__ == '__main__':
-		unittest.main()
+		print 'hola'
+	def testMe(self):
+		print 'nuay'
+	def test_malo(self):
+		print 'va pasar'
+		raise ValueError()
+if __name__=="__main__":
+    unittest.main()
